@@ -17,7 +17,7 @@ $button[2].textContent = answers[2];
 $button[3].textContent = answers[3];
 
 $button[0].addEventListener("click", ()=>{
-  if( correct === document.getElementsByTagName("button")[0].textContent){
+  if( correct === $button[0].textContent){
     window.alert("正解！");
   } else {
     window.alert("不正解！");
