@@ -22,33 +22,23 @@ const setupQuiz = () => {
 
 setupQuiz();
 
-
+const clickHandler = (e) => {
+  if( correct === e.target.textContent){
+    window.alert("正解！");
+  } else {
+    window.alert("不正解！");
+  }
+}
 
 $button[0].addEventListener("click", (e)=>{
-  if( correct === e.target.textContent){
-    window.alert("正解！");
-  } else {
-    window.alert("不正解！");
-  }
+  clickHandler(e);
 });
 $button[1].addEventListener("click", (e)=>{
-  if( correct === e.target.textContent){
-    window.alert("正解！");
-  } else {
-    window.alert("不正解！");
-  }
+  clickHandler(e);
 });
 $button[2].addEventListener("click", (e)=>{
-  if( correct === e.target.textContent){
-    window.alert("正解！");
-  } else {
-    window.alert("不正解！");
-  }
+  clickHandler(e);
 });
 $button[3].addEventListener("click", (e)=>{
-  if( correct === e.target.textContent){
-    window.alert("正解！");
-  } else {
-    window.alert("不正解！");
-  }
+  clickHandler(e);
 });
