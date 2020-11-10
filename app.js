@@ -1,12 +1,37 @@
-const question = "マイケル・スコフィールドの名言は？ ";
-const answers = [
-  "お肉食べたい", 
-  "信じることだ", 
-  "脱獄無理ゲーwww", 
-  "展開だらだらしすぎ"
+const quiz = [
+
+  {
+    question: "マイケル・スコフィールドの名言は？",
+    answers: [
+      "お肉食べたい", 
+      "信じることだ", 
+      "脱獄無理ゲー", 
+      "展開だらだらしすぎ"
+    ],
+    correct: "信じることだ"
+  }, {
+    question: "ソリッド・スネークの名言は？",
+    answers: [
+      "大佐あああああ！", 
+      "麻酔銃で寝たい", 
+      "潜入無理ゲー", 
+      "性欲を持て余す..."
+    ],
+    correct: "性欲を持て余す..."
+  }, {
+    question: "イチローが絶対に言わないことは？",
+    answers: [
+      "喝！！", 
+      "ホークスにいきたい", 
+      "焼きそばUFO食べたい", 
+      "酒だ、酒！！"
+    ],
+    correct: "喝！！"
+  }
 ];
 
-const correct = "信じることだ";
+const quizLength = quiz.length;
+let quizIndex = 0;
 
 const $button = document.getElementsByTagName("button");
 const buttonLength = $button.length
@@ -29,6 +54,7 @@ const clickHandler = (e) => {
   } else {
     window.alert("不正解！");
   }
+
 }
 
 // ボタンをクリックしたら正誤判定
